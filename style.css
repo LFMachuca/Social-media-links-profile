@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --color-green:hsl(75, 94%, 57%);
+    --color-white:hsl(0, 0%, 100%);
+    --color-grey-700:hsl(0, 0%, 20%);
+    --color-grey-800:hsl(0, 0%, 12%);
+    --color-grey-900:hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-grey-900);
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.profile-card{
+    width: 23em;
+    background-color: var(--color-grey-800);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 1rem;
+}
+.profile-card .profile-img{
+    border-radius: 50%;
+    width: 100px;
+    object-fit: cover;
+}
+.profile-card .profile-title{
+    font-family: 'Inter', sans-serif;
+    color: var(--color-white);
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 10px 0 5px 0;
+    
+    
+}
+.profile-card .profile-data{
+    font-family: 'Inter',sans-serif;
+    color: var(--color-green);
+    font-weight: 800;
+    font-size: 14px;
+    margin:0;
+   
+}
+.profile-card .profile-description{
+    font-family: 'Inter',sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-white);
+    margin:10px 0 20px 0;
+   
+}
+
+.profile-social-media {
+    width: 100%;
+}
+
+.profile-social-media .social-media-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.social-media-btn .list-item{
+    margin-top: 1rem;
+    width: 100%;
+}
+.list-item .btn-social-media {
+    display: block;
+    color: var(--color-white);
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Inter',sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    padding: 7px 20px;
+    background: var(--color-grey-700);
+    border-radius: 10px;
+    transition: .3s ease-in;
+}
+.btn-social-media:hover{
+    background-color: var(--color-green);
+    color: var(--color-grey-900);
+}
